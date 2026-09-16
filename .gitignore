@@ -1,0 +1,6 @@
+# Environment variables (raiz - usadas pelo docker-compose)
+.env
+.env.local
+
+# OS
+.DS_Store
