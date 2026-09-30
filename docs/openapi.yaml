@@ -1,0 +1,30 @@
+openapi: 3.0.3
+info:
+  title: ViajaJunto API
+  version: 0.0.1
+  description: Contrato da API do ViajaJunto.
+  contact:
+    name: Equipe ViajaJunto
+    url: https://github.com/LucasMachadoG/viaja-junto
+servers:
+  - url: http://localhost:3000
+    description: Ambiente local
+tags:
+  - name: App
+    description: Endpoints gerais da aplicação
+paths:
+  /:
+    get:
+      tags:
+        - App
+      operationId: getHello
+      summary: Mensagem de boas-vindas
+      description: Retorna uma mensagem simples indicando que a API está no ar.
+      responses:
+        '200':
+          description: Mensagem de boas-vindas.
+          content:
+            text/html:
+              schema:
+                type: string
+                example: Hello World!
